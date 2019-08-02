@@ -15,6 +15,7 @@ setup(
     license='MIT License',
     description='A quick, rough around the edges Django application to remember and remove temporary files.',
     long_description=README,
+    long_description_content_type='text/markdown',
     url='https://www.bravasoftware.com/',
     author='Mark Skelton',
     author_email='mark@bravasoftware.com',
