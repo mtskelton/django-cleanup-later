@@ -24,7 +24,6 @@ class CleanupFile(models.Model):
     def cleanup(cls):
         for cf in cls.objects.filter(cleanup_after__lt=timezone.now()):
             if os.path.exists(cf.filename):
-                print(' ... removing %s' % (cf.filename))
                 os.remove(cf.filename)
 
             cf.delete()
